@@ -144,6 +144,10 @@ div .right { overflow: hidden;}
     overflow: hidden;
     margin: 5px;
 }
+#list a > div:hover {
+    background-color: #fff0ea;
+}
+
 
 
 /* project */
@@ -271,6 +275,49 @@ input[id*="PrjDetail"]:checked + label i {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
+
+/* contact */
+.inform {
+    margin: 15px 50px;
+    padding : 10px;
+    border-color: #ffcfbc;
+    border-style: solid; border-radius: 10px;
+    width: fit-content;
+}
+
+form {
+    margin: 0 50px;
+    min-width: 880px;
+}
+
+fieldset {
+    border-color: #b2e4ff; border-radius: 10px;
+    background-color: #f6fbff;
+}
+
+input, textarea, select{
+    border-color: #b2e4ff; 
+}
+
+input[type="text"] {
+    width: 300px;
+    margin-right: 50px;
+}
+
+input[type="email"] {
+    width: 300px;
+}
+
+input[type="submit"] {
+    background-color: #ffcfbc;
+    padding: 5px 7px;
+    border-radius: 10px;
+    border-color: #92a8c9;
+    border-style: solid;
+    margin-left: 50px;
+}
+
+
 
 /* footer */
 
