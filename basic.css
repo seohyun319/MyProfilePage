@@ -1,9 +1,9 @@
 #header {
-    position: static; 
+    /* position: static;  */
 }
 
 #MainBan {
-    height: 200px; width: 100%; line-height: 200px;
+    height: 200px; width: 100%; line-height: 200px; top: 0px;
     background: #ffcfbc; /* Old browsers */
     background: -moz-linear-gradient(left,  #ffcfbc 0%, #b2e4ff 49%, #92a8c9 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left,  #ffcfbc 0%,#b2e4ff 49%,#92a8c9 100%); /* Chrome10-25,Safari5.1-6 */
@@ -11,12 +11,12 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcfbc', endColorstr='#92a8c9',GradientType=1 ); /* IE6-9 */
     text-align: center; font-family: algerian;
     overflow: hidden;    
-    /* position: fixed; */
-    opacity: 1.0;
+    position: fixed;
+    z-index: 5;
 }
 
 
-/*
+/* 
 nav {
     position: relative;
 } */
@@ -25,11 +25,13 @@ nav ul {
     background-color: #ffcfbc; overflow: hidden; 
     padding-top: 12px; 
     padding-bottom: 12px; 
+    border-top-color: #b2e4ff;
+    border-top-style: solid;
     width: 100%; overflow: hidden; 
-    /* position: fixed;  */
-    top: 194px;
+    position: fixed; z-index: 5;
+    top: 184px;
     min-width: 900px;
-    position: absolute;
+    /* position: absolute; */
 }
 
 nav ul li {
@@ -64,14 +66,14 @@ nav ul a{
 
 audio {
     position: relative;
-    top: 100px;
+    top: 300px;
 }
 
 .article {
     position: relative;
     /* position: absolute; */
     align-items: center;
-    top:100px;
+    top:280px;
     margin: 10px 50px;
     padding-bottom: 120px;
     overflow: hidden;
@@ -121,6 +123,10 @@ audio {
     text-decoration: none; 
 }
 
+.linkTo:hover {
+    background-color: white;
+}
+
 .ctt >div >a >div {
     background-color: #fff6f2;
     border-color: #ffcfbc;
@@ -128,6 +134,10 @@ audio {
     border-style:solid;
     margin: 10px 10px 5px;
     padding: 5px 5px;
+}
+
+.ctt >div >a >div:hover {
+    background-color: white;
 }
 
 .ctt >div >a >div >i {
