@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/131f1805d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <title>자취의 방정식 = f(KimSeoHyun) - PROJECT</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="MainBan">
+            <h2>
+                자취의 방정식 = f(KimSeoHyun)
+            </h2>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>Main</li>
+            </a>
+            <a href="profile.html">
+                <li>Profile</li>
+            </a>
+            <a href="project.html">
+                <li>Project</li>
+            </a>
+            <a href="contact.html" class="clicked">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="article">
+        <div>
+            <div class="inform">
+                저에게 하고 싶은 말이 있다면 자유롭게 적어주세요. <br />
+                이메일 : seohyeon0319@sookmyung.ac.kr
+            </div>
+
+            <form method = "POST" action = "submit.html">
+                <fieldset>
+                    <legend>CONTACT</legend>
+                    이름 : <input type="text" class="name" required>
+                    답장 수신 Email : <input type="email" class="email" placeholder="답장 수신을 원할 시 입력해주세요."><br />
+                    제목 : <input type="text" class="title" required>
+                    주제: 
+                    <select name="subject" size="1" class="subject" required>
+                        <option value="a">단순 문의</option>
+                        <option value="b">협업 문의</option>
+                        <option value="c">기타</option>
+                    </select> <br><br>
+                    내용: <br>
+                    <textarea name="content" rows="7" class="formContent" placeholder="내용을 입력해주세요." required></textarea>
+                    <hr />
+                    <input type="file" name="file"><br>
+                    <input type="submit" value="전송하기">
+
+                </fieldset>
+
+            </form>
+
+        </div>
+    </div>
+
+    
+
+   
+</body> 
+
+<footer>
+    <div id="footer">
+        <small>&copy; Kim Seo Hyun. All rights reserved.</small><br />
+        <small>email : seohyeon0319@sookmyung.ac.kr</small>
+    </div>
+</footer>
+
+</html>

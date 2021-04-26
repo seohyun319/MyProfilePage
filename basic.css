@@ -1,0 +1,282 @@
+#header {
+    position: static; 
+}
+
+#MainBan {
+    height: 200px; width: 100%; line-height: 200px;
+    background: #ffcfbc; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ffcfbc 0%, #b2e4ff 49%, #92a8c9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #ffcfbc 0%,#b2e4ff 49%,#92a8c9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #ffcfbc 0%,#b2e4ff 49%,#92a8c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcfbc', endColorstr='#92a8c9',GradientType=1 ); /* IE6-9 */
+    text-align: center; font-family: algerian;
+    overflow: hidden;    
+    /* position: fixed; */
+    opacity: 1.0;
+}
+
+
+/*
+nav {
+    position: relative;
+} */
+
+nav ul { 
+    background-color: #ffcfbc; overflow: hidden; 
+    padding-top: 12px; 
+    padding-bottom: 12px; 
+    width: 100%; overflow: hidden; 
+    /* position: fixed;  */
+    top: 194px;
+    min-width: 900px;
+    position: absolute;
+}
+
+nav ul li {
+    border-color: white; border-style:solid;
+    border-radius: 15px;
+    padding: 4px 20px; 
+    text-align: center;
+    overflow: hidden;
+}
+
+nav ul li:hover {
+    border-color: #92a8c9;
+    color: #92a8c9;
+}
+
+.clicked {
+    background-color: white;
+    color: #92a8c9;
+    border-radius: 15px;
+}
+
+nav ul a{
+    margin: 0 20px;
+    font-size: 1.8em;
+    float: left;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    list-style: none;
+    text-decoration: none;      
+}
+
+.article {
+    position: relative;
+    /* position: absolute; */
+    align-items: center;
+    top:100px;
+    margin: 10px 50px;
+    padding-bottom: 120px;
+    border-color: red;
+    border-style:solid;
+    overflow: hidden;
+    min-width: 750px;
+    
+}
+
+/* main */
+/* .left6 { border-color: black;
+    border-style:solid;
+    float: left;
+} */
+
+.left6 img { height: 300px; 
+    /* float: left; */
+}
+
+/* .left6 div { float: left;}
+
+.right4 { border-color: black;
+    border-style:solid;
+    float: left;
+} 
+
+.ctt {
+    background-color: #b2e4ff;
+    border-color: black;
+    border-style:solid;
+}
+ */
+
+
+
+
+
+
+
+/* profile */
+
+div .left { overflow: hidden; }
+div .right { overflow: hidden;}
+
+.left {
+    border-color: blue;
+    border-style:solid;
+    width: 50%; min-width: 600px;
+    float: left; padding: 20px;
+}
+
+.right {
+    border-color: blue;
+    border-style:solid;
+    /* width: 50%;  */
+    float: left;
+    padding: 20px;
+}
+
+.right h3 { text-align: center;}
+
+#list {
+    margin-left: 20px;
+}
+
+#list a {
+    text-decoration: none;     
+}
+
+#list a > div{
+    border-color: #b2e4ff; border-style:solid;
+    border-radius: 15px;
+    padding: 4px 20px; 
+    color: #92a8c9;
+    overflow: hidden;
+    margin: 5px;
+}
+
+
+/* project */
+.left5 {
+    border-color: blue;
+    border-style:solid;
+    /* width: 50%;  */
+    width: 300px;
+    min-width: 10px;
+    float: left; padding: 20px;
+    
+}
+
+.right5 {
+    border-color: blue;
+    border-style:solid;
+    /* width: 50%;  */
+    width: 300px;
+    min-width: 10px;
+    float: left;
+    padding: 20px;
+}
+
+.PrjContent {
+    border-color: #92a8c9; border-style:solid;
+    border-radius: 10px;
+    padding: 4px 20px; 
+    color: #92a8c9;
+    
+    overflow: hidden;
+    margin: 5px;
+}
+
+.PrjDrop {
+    border-color: #92a8c9; border-style:solid;
+    border-radius: 10px;
+    padding: 4px 20px; 
+    color: black;
+    overflow: hidden;
+    margin: 5px;
+}
+
+input[id*="PrjDrop"] {
+    display:none;
+}
+
+input[id*="PrjDrop"] + label {
+    display:block;
+    padding:3px;
+    cursor: pointer;
+}
+
+input[id*="PrjDrop"] + label + div {
+    max-height: 0;
+    transition: all .8s;
+    overflow:hidden;   
+}
+
+input[id*="PrjDrop"] + label + div p {
+    display: inline-block;
+}
+
+input[id*="PrjDrop"]:checked + label + div {
+    max-height:300px;
+}
+
+input[id*="PrjDrop"] + label i {
+    border: solid gray;
+    right:800px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+input[id*="PrjDrop"]:checked + label i {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+input[id*="PrjDetail"] {
+    display:none;
+}
+
+input[id*="PrjDetail"] + label {
+    display:block;
+    padding:10px;
+    margin: 5px 0px;
+    cursor: pointer;
+    border-color: #ffcfbc;
+    border-style: solid; border-radius: 20px;
+}
+
+input[id*="PrjDetail"] + label + div {
+    max-height: 0;
+    transition: all .8s;
+    overflow:hidden;   
+    
+}
+
+input[id*="PrjDetail"] + label + div p {
+    display: inline-block;
+    padding: 8px;
+    border-color: #b2e4ff;
+    border-style: solid; border-radius: 10px;
+
+}
+
+input[id*="PrjDetail"]:checked + label + div {
+    max-height:300px;
+}
+
+input[id*="PrjDetail"] + label i {
+    border: solid gray;
+    right:800px;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+input[id*="PrjDetail"]:checked + label i {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+/* footer */
+
+footer{
+    background: linear-gradient(to right,  #ffcfbc 0%,#b2e4ff 49%,#92a8c9 100%); 
+    bottom: 0; padding: 10px;
+    color: #555a61; text-align: center;
+    position: fixed; width: 100%;
+}
