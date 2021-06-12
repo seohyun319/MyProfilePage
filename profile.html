@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/131f1805d6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="basic.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/profile.css" />
     <title>자취의 방정식 = f(KimSeoHyun) - PROFILE</title>
 </head>
 
@@ -122,44 +123,67 @@
             <h3>동아리 목록</h3>
             <div id="list">
                 <a href="http://cafe.daum.net/aeting"><div class="club">
-                    <div>
+                    <div class="club" onmouseover="show(this)" onmouseout="hide(this)">
                         AETING
+                        <span class="tooltip">사회과학 독서토론 연합 동아리</span>
                     </div>
                 </div></a>
                 <a href="https://cafe.naver.com/sioreum"><div class="club">
-                    <div>
+                    <div class="club" onmouseover="show(this)" onmouseout="hide(this)">
                         詩오름
+                        <span class="tooltip">숙명여자대학교 한국어문학부 시 감상 학회</span>
                     </div>
                 </div></a>
                 <a href="https://www.instagram.com/ssc__1987"><div class="club">
-                    <div>
+                    <div class="club" onmouseover="show(this)" onmouseout="hide(this)">
                         SSC
+                        <span class="tooltip">영어 회화 토론 연합 동아리</span>
                     </div>
                 </div></a>
                 <a href="https://www.instagram.com/moviebox_15"><div class="club">
-                    <div>
+                    <div class="club" onmouseover="show(this)" onmouseout="hide(this)">
                         MovieBox
+                        <span class="tooltip">영화 감상 토론 연합 동아리</span>
                     </div>
                 </div></a>
                 <a href="https://www.instagram.com/sookmyung_koreaneducation"><div class="club">
-                    <div>
-                        숙명한국어교육봉사단
+                    <div class="club" onmouseover="show(this)" onmouseout="hide(this)">
+                        숙명한국어교육봉사단 (SKEV)
+                        <span class="tooltip">숙명여자대학교 리더십 그룹 (SKEV : Sookmyung Korean Education Volunteer)</span>
                     </div>
                 </div></a>
                 <a href="https://www.instagram.com/pirogramming_official"><div class="club">
-                    <div>
+                    <div class="club" onmouseover="show(this)" onmouseout="hide(this)">
                         P.rogramming
+                        <span class="tooltip">서울대학교 소속 웹프로그래밍 연합 동아리</span>
                     </div>
                 </div></a>
                 <a href="https://solux.dev/"><div class="club">
-                    <div>
+                    <div class="club" onmouseover="show(this)" onmouseout="hide(this)">
                         SOLUX
+                        <span class="tooltip">숙명여자대학교 프로그래밍 중앙 동아리</span>
                     </div>
                 </div></a>
             </div>
             
         </div>
     </div>
+
+
+<script type="text/javascript">    
+    
+
+    function show (tooltip) {  /* added argument */
+        tooltip.style.display="block"; /* changed variable to argument */
+    }
+    function hide (tooltip) { /* added argument */
+        tooltip.style.display="";  /* changed variable to argument */
+    }
+    
+
+
+
+</script>
    
 </body> 
 

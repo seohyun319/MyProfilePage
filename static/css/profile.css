@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+div .left { overflow: hidden; }
+div .right { overflow: hidden;}
+
+.left {
+    width: 50%; min-width: 600px; 
+    float: left; padding: 20px;
+    padding-left: 50px;
+}
+
+.right {
+    width: 35%; 
+    float: left;
+    padding: 20px;
+}
+
+.right h3 { text-align: center; 
+    background-color: #fff6f2;
+    border-color: #ffcfbc;
+    border-radius: 10px;
+    border-style:solid;
+    margin: 10px 10px 10px 30px;
+    padding: 19px 5px;
+    text-align: center;
+}
+
+table {
+    border-color: #b2e4ff;
+    /* border-collapse: collapse; */
+    border-style: solid;
+    border-width: thick;
+    border-radius: 5px;
+}
+
+table caption {
+    text-align: center; 
+    background-color: #fff6f2;
+    border-color: #ffcfbc;
+    border-radius: 10px;
+    border-style:solid;
+    margin: 10px;
+    text-align: center;
+}
+
+table th {
+    color: #92a8c9;
+    font-size: 18px;
+}
+
+table th, td {
+    padding: 3px 10px;
+}
+
+#list {
+    margin-left: 20px;
+}
+
+#list a {
+    text-decoration: none;     
+}
+
+#list a > div{
+    border-color: #b2e4ff; border-style:solid;
+    border-radius: 15px;
+    padding: 4px 20px; 
+    color: #92a8c9;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.club:hover {
+    background-color: #fff0ea;
+}
+
+.club:hover .tooltip { 
+    display: block;
+}
+
+
+.tooltip {
+    display: none; width: 25%; background-color: #ffcfbc; color: white; 
+    font-weight: 800; text-align: center; border-radius: 10px; padding: 10px 5px; 
+    margin-left: 20px; position: absolute; z-index: 1; 
+
+}
