@@ -9,6 +9,14 @@ div .right { overflow: hidden;}
     padding-left: 50px;
 }
 
+#fade1{
+    opacity: 0.1;
+}
+
+#fade2{
+    opacity: 0.1;
+}
+
 .right {
     width: 35%; 
     float: left;
