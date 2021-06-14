@@ -37,7 +37,7 @@
     </nav>
 
     <div class="article">
-        <div class="left5">
+        <div class="left5" >
             <h3 class="PrjContent">
                 완료한 프로젝트 : 1건
             </h3>
@@ -56,10 +56,17 @@
                             <div><p>
                                 연극, 뮤지컬을 좋아하는 사람이 이용할 수 있는 플랫폼.<br /><br />
                                 사용 기술 스택 : python, DJANGO, CSS, BOOTSTRAP, AJAX, JS
+                                <div id="detailModal">자세히 보기</div>
                             </p></div>            
-                    </div>            
+                        </div>            
+                        <div class="modal hidden">
+                            <div class="background"></div>
+                            <div class="modalBox">
+                                <div id="closeBtn">X</div>
+                                <img src="static/images/image01.png" alt="사진1">                        
+                            </div>
+                        </div>
             </div>
-            
         </div>
             
 
@@ -104,10 +111,24 @@
 
 
 
+<script type="text/javascript">      
 
-    
+    var modal = document.querySelector(".modal");
+    var openBtn = document.getElementById("detailModal");
+    openBtn.onclick=open;
+    function open() {
+        modal.style.display='flex';
+    }
 
-   
+    var closeBtn = document.getElementById("closeBtn");
+    closeBtn.onclick=close;
+    var background = document.querySelector(".background");
+    background.onclick=close;
+    function close() {
+        modal.style.display='none';
+    }
+
+</script>
 </body> 
 
 <footer>
